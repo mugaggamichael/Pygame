@@ -1,9 +1,3 @@
-#Isanga Nadia Hanifa 16/u/4965/ps
-#Mugagga Michael Mulondo 16/u/7210/ps
-#Samula Michael Colton 16/u/1089
-#Wolimbwa Gadenya Norman 16/u/12408/ps
-
-# 1 - Import library
 import pygame
 from pygame.locals import *
 import math
@@ -41,10 +35,10 @@ health = pygame.image.load("resources/images/health.png")
 
 
 pygame.display.set_icon(player)
-pygame.display.set_caption("Bunny Game")
+pygame.display.set_caption("Computer game")
 
-gameover = pygame.image.load("resources/images/gameover.png")
-youwin = pygame.image.load("resources/images/youwin.png")
+gameover = pygame.image.load("resources/images/gameover1.png")
+youwin = pygame.image.load("resources/images/youwin1.png")
 
 #3.1 - Load audio
 hit = pygame.mixer.Sound("resources/audio/explode.wav")
@@ -215,7 +209,7 @@ while running:
 if exitcode==0:
     pygame.font.init()
     font = pygame.font.Font(None, 24)
-    text = font.render("Accuracy: "+str(accuracy)+"%", True, (255, 0, 0))
+    text = font.render("DUDE YOUR ACCURACY IS  "+str(accuracy)+"%", True, (25, 10, 5))
     textRect = text.get_rect()
     textRect.centerx=screen.get_rect().centerx
     textRect.centery=screen.get_rect().centery+24
@@ -225,7 +219,7 @@ if exitcode==0:
 else:
     pygame.font.init()
     font = pygame.font.Font(None, 24)
-    text = font.render("Accuracy: "+str(accuracy)+"%", True, (0, 255, 0))
+    text = font.render("DUDE YOUR ACCURACY IS "+str(accuracy)+"%", True, (26, 3, 2))
     textRect = text.get_rect()
     textRect.centerx=screen.get_rect().centerx
     textRect.centery=screen.get_rect().centery+24
@@ -238,4 +232,5 @@ while 1:
             pygame.quit()
             exit(0)
     pygame.display.flip()
+
 

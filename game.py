@@ -1,7 +1,7 @@
 #Isanga Nadia Hanifa 16/u/4965/ps
 #Mugagga Michael Mulondo 16/u/7210/ps
 #Samula Michael Colton 16/u/1089
-#Wolimbwa Gadenya Norman
+#Wolimbwa Gadenya Norman 16/u/12408/ps
 
 # 1 - Import library
 import pygame
